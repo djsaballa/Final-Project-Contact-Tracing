@@ -26,21 +26,21 @@ Route::get('/user-login', 'App\Http\Controllers\UserController@login');
 
 Route::get('/user-register', 'App\Http\Controllers\UserController@register');
 
-Route::get('/user-user-form', 'App\Http\Controllers\UserController@user_form');
+Route::get('/user-user-form', 'App\Http\Controllers\UserController@userForm');
 
-Route::get('/user-forgot-password', 'App\Http\Controllers\UserController@forgot_password');
+Route::get('/user-forgot-password', 'App\Http\Controllers\UserController@forgotPassword');
 
-Route::get('/user-verify-forgot-password', 'App\Http\Controllers\UserController@verify_forgot_password');
+Route::get('/user-verify-forgot-password', 'App\Http\Controllers\UserController@verifyForgotPassword');
 
-Route::get('/user-new-password', 'App\Http\Controllers\UserController@new_password');
+Route::get('/user-new-password', 'App\Http\Controllers\UserController@newPassword');
 
-Route::get('/user-qr-register', 'App\Http\Controllers\UserController@qr_register');
+Route::get('/user-qr-register', 'App\Http\Controllers\UserController@qrRegister');
 
-Route::get('/user-qr-login', 'App\Http\Controllers\UserController@qr_login');
+Route::get('/user-qr-login', 'App\Http\Controllers\UserController@qrLogin');
 
-Route::get('/user-privacy-policy', 'App\Http\Controllers\UserController@privacy_policy');
+Route::get('/user-privacy-policy', 'App\Http\Controllers\UserController@privacyPolicy');
 
-Route::get('/user-terms-condition', 'App\Http\Controllers\UserController@terms_condition');
+Route::get('/user-terms-condition', 'App\Http\Controllers\UserController@termsCondition');
 
 
 // Admin
@@ -49,6 +49,8 @@ Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
 Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
 
-Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@table_list');
+Route::post('//admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
 
-Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiver_qr');
+Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');
+
+Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiverQr');

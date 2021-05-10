@@ -18,12 +18,23 @@ class AdminController extends Controller
         return view('/admin/login');
     }
 
-    public function receiver_qr(Request $request)
+    public function loginAuth(Request $request)
+    {
+        $username;
+        $password;
+
+        if ($username == 'admin' && $password == 'admin') {
+            return redirect('/admin/table-list');
+        }
+        return redirect('/admin/login');
+    }
+
+    public function receiverQr(Request $request)
     {
         return view('/admin/receiver-qr');
     }
 
-    public function table_list (Request $request)
+    public function tableList (Request $request)
     {
         return view('/admin/table-list');
     }

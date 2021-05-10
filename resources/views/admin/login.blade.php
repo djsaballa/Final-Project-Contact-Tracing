@@ -21,6 +21,22 @@
         </style>
     </head>
     <body class="antialiased">
-      <h1> Admin Log In~~ </h1>
+      <h1>Admin Login</h1>
+
+      <form method="POST" action="/admin-login-auth">
+            @csrf
+
+            Username:
+            <input type="text" name="name" value="{{ $username ?? '' }}"/>
+            <br>
+            <br>
+
+            Password:
+            <input type="password" name="password" value="{{ $password ?? '' }}"/>
+            <br>
+            <br>
+
+            <button type="submit"> Login </button>
+      </form>
     </body>
 </html>

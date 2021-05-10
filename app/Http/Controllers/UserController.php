@@ -16,52 +16,47 @@ class UserController extends Controller
         return view('/user/login');
     }
 
-    public function login(Request $request)
-    {
-        return view('/user/login');
-    }
-
     public function register(Request $request)
     {
         return view('/user/register');
     }
 
-    public function user_form(Request $request)
+    public function userForm(Request $request)
     {
         return view('/user/user-form');
     }
 
-    public function forgot_password(Request $request)
+    public function forgotPassword(Request $request)
     {
         return view('/user/forgot-password');
     }
 
-    public function verify_forgot_password(Request $request)
+    public function verifyForgotPassword(Request $request)
     {
         return view('/user/verify-forgot-password');
     }
 
-    public function new_password(Request $request)
+    public function newPassword(Request $request)
     {
         return view('/user/new-password');
     }
 
-    public function qr_register(Request $request)
+    public function qrRegister(Request $request)
     {
         return view('/user/qr-register');
     }
 
-    public function qr_login(Request $request)
+    public function qrLogin(Request $request)
     {
         return view('/user/qr-login');
     }
 
-    public function privacy_policy(Request $request)
+    public function privacyPolicy(Request $request)
     {
         return view('/user/privacy-policy');
     }
 
-    public function terms_condition(Request $request)
+    public function termsCondition(Request $request)
     {
         return view('/user/terms-condition');
     }
