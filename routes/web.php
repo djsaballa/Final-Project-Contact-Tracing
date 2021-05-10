@@ -49,7 +49,7 @@ Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
 Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
 
-Route::post('//admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
+Route::post('/admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
 
 Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');
 

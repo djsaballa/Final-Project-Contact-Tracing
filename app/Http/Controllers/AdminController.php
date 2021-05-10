@@ -20,13 +20,9 @@ class AdminController extends Controller
 
     public function loginAuth(Request $request)
     {
-        $username;
-        $password;
+        $username ;
+        $password ;
 
-        if ($username == 'admin' && $password == 'admin') {
-            return redirect('/admin/table-list');
-        }
-        return redirect('/admin/login');
     }
 
     public function receiverQr(Request $request)
