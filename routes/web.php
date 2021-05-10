@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< Updated upstream
 // user
 <<<<<<< HEAD
 Route::get('/user-forgot-password', function () {
@@ -51,11 +52,20 @@ Route::get('/user-verify-forgot-password', function () {
 Route::get('/user-welcome', function () {
     return view('/user/login');
 });
+=======
 
+// Admin
+>>>>>>> Stashed changes
 
+Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
+Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
 
+Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@table_list');
 
+Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiver_qr');
+
+<<<<<<< Updated upstream
 =======
 // Admin
 
@@ -69,3 +79,6 @@ Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiver_
 
 // User
 >>>>>>> 1011c105f8767b53bd2f3b4dc0dca3dc22246a3a
+=======
+// User
+>>>>>>> Stashed changes
