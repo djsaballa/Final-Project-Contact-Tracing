@@ -17,35 +17,44 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// user
+// User
 
 Route::get('/user-forgot-password', function () {
     return view('/user/forgot-password');
 });
+
 Route::get('/user-login', function () {
     return view('/user/login');
 });
+
 Route::get('/user-new-password', function () {
     return view('/user/new-password');
 });
+
 Route::get('/user-privacy-policy', function () {
     return view('/user/privacy-policy');
 });
+
 Route::get('/user-qr-login', function () {
     return view('/user/qr-login');
 });
+
 Route::get('/user-qr-register', function () {
     return view('/user/qr-register');
 });
+
 Route::get('/user-register', function () {
     return view('/user/register');
 });
+
 Route::get('/user-terms-condition', function () {
     return view('/user/terms-condition');
 });
+
 Route::get('/user-form', function () {
-    return view('/user/form');
+    return view('/user/user-form');
 });
+
 Route::get('/user-verify-forgot-password', function () {
     return view('/user/verify-forgot-password');
 });
