@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// user 
 Route::get('/user-forgot-password', function () {
     return view('/user/login');
 });
