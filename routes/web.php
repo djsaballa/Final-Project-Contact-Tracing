@@ -16,3 +16,42 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user-forgot-password', function () {
+    return view('/user/login');
+});
+Route::get('/user-login', function () {
+    return view('/user/login');
+});
+Route::get('/user-new-password', function () {
+    return view('/user/login');
+});
+Route::get('/user-privacy-policy', function () {
+    return view('/user/login');
+});
+Route::get('/user-qr-login', function () {
+    return view('/user/login');
+});
+Route::get('/user-qr-register', function () {
+    return view('/user/login');
+});
+Route::get('/user-register', function () {
+    return view('/user/login');
+});
+Route::get('/user-terms-condition', function () {
+    return view('/user/login');
+});
+Route::get('/user-form', function () {
+    return view('/user/login');
+});
+Route::get('/user-verify-forgot-password', function () {
+    return view('/user/login');
+});
+Route::get('/user-welcome', function () {
+    return view('/user/login');
+});
+
+
+
+
+
