@@ -14,6 +14,11 @@ class AdminController extends Controller
         return view('/admin/welcome');
     }
 
+    public function navigation(Request $request)
+    {
+        return view('/admin/navigation');
+    }
+
     public function login(Request $request)
     {
         return view('/admin/login');

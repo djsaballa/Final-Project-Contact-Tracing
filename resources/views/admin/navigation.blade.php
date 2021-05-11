@@ -26,20 +26,13 @@
 
         <h5 style="text-align: center; margin: 15px;">Admin</h5>
 
-        <form method="POST" action="/admin-login-auth"  style="text-align: center;">
-                @csrf
-
-                Username:
-                <input type="text" name="name" value="{{ $username ?? '' }}"/>
-                <br>
-                <br>
-
-                Password:
-                <input type="password" name="password" value="{{ $password ?? '' }}"/>
-                <br>
-                <br>
-
-                <button type="submit"> Login </button>
+        <form style="text-align: center;">
+            <button>
+                <a href='/admin-receiver-qr'> Scan QR Code </a> 
+            </button>
+            <button>
+                <a href='/admin-table-list'> Guest List </a> 
+            </button>
         </form>
     </body>
 </html>

@@ -47,6 +47,8 @@ Route::get('/user-terms-condition', 'App\Http\Controllers\UserController@termsCo
 
 Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
+Route::get('/admin-navigation', 'App\Http\Controllers\AdminController@navigation');
+
 Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
 
 Route::post('/admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
