@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ContactTracing;
+use App\Models\UserInfo;
+use App\Models\UserQr;
 
 
 class AdminController extends Controller
@@ -32,6 +33,9 @@ class AdminController extends Controller
 
     public function tableList (Request $request)
     {
-        return view('/admin/table-list');
+        $user_info = UserInfo::all();
+        $user_qr = UserQr::all();
+        
+        return view('/admin/table-list', compact('user_info', 'user_qr'));
     }
 }

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ContactTracing;
+use App\Models\UserInfo;
+use App\Models\UserQr;
+
 
 class UserController extends Controller
 {
