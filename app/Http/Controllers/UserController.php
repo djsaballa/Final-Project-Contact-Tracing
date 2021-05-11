@@ -9,49 +9,14 @@ use App\Models\UserQr;
 
 class UserController extends Controller
 {
-    public function welcome(Request $request)
-    {
-        return view('/user/welcome');
-    }
-
-    public function login(Request $request)
-    {
-        return view('/user/login');
-    }
-
-    public function register(Request $request)
-    {
-        return view('/user/register');
-    }
-
     public function userForm(Request $request)
     {
         return view('/user/user-form');
     }
 
-    public function forgotPassword(Request $request)
+    public function qrCode(Request $request)
     {
-        return view('/user/forgot-password');
-    }
-
-    public function verifyForgotPassword(Request $request)
-    {
-        return view('/user/verify-forgot-password');
-    }
-
-    public function newPassword(Request $request)
-    {
-        return view('/user/new-password');
-    }
-
-    public function qrRegister(Request $request)
-    {
-        return view('/user/qr-register');
-    }
-
-    public function qrLogin(Request $request)
-    {
-        return view('/user/qr-login');
+        return view('/user/qr-code');
     }
 
     public function privacyPolicy(Request $request)

@@ -20,23 +20,9 @@ Route::get('/', function () {
 
 // User
 
-Route::get('/user-welcome', 'App\Http\Controllers\UserController@welcome');
-
-Route::get('/user-login', 'App\Http\Controllers\UserController@login');
-
-Route::get('/user-register', 'App\Http\Controllers\UserController@register');
-
 Route::get('/user-user-form', 'App\Http\Controllers\UserController@userForm');
 
-Route::get('/user-forgot-password', 'App\Http\Controllers\UserController@forgotPassword');
-
-Route::get('/user-verify-forgot-password', 'App\Http\Controllers\UserController@verifyForgotPassword');
-
-Route::get('/user-new-password', 'App\Http\Controllers\UserController@newPassword');
-
-Route::get('/user-qr-register', 'App\Http\Controllers\UserController@qrRegister');
-
-Route::get('/user-qr-login', 'App\Http\Controllers\UserController@qrLogin');
+Route::get('/user-qr-code', 'App\Http\Controllers\UserController@qrCode');
 
 Route::get('/user-privacy-policy', 'App\Http\Controllers\UserController@privacyPolicy');
 

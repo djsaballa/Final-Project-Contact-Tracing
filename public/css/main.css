@@ -1,0 +1,510 @@
+/* REGISTER */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: #FFFFFF;
+border-radius: 32px;
+
+
+/* Text */
+
+position: absolute;
+width: 0px;
+height: 21px;
+left: 187px;
+top: 363px;
+
+
+
+
+/* Group 54 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 42px;
+top: 303px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 42px;
+top: 303px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+box-sizing: border-box;
+border-radius: 24px;
+
+
+/* Group 55 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 40px;
+top: 382px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 40px;
+top: 382px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+box-sizing: border-box;
+border-radius: 24px;
+
+
+/* Phone number:* */
+
+position: absolute;
+width: 116px;
+height: 21px;
+left: 43px;
+top: 280px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+
+color: #4D4D4D;
+
+
+
+/* Email: */
+
+position: absolute;
+width: 44px;
+height: 21px;
+left: 43px;
+top: 362px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+
+color: #4D4D4D;
+
+
+
+/* Group 56 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 461px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 461px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+box-sizing: border-box;
+border-radius: 24px;
+
+
+/* Create Password* */
+
+position: absolute;
+width: 129px;
+height: 21px;
+left: 43px;
+top: 440px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+
+color: #4D4D4D;
+
+
+
+/* ex. Juan Dela Cruz */
+
+position: absolute;
+width: 255px;
+height: 15px;
+left: 60px;
+top: 315px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: rgba(0, 0, 0, 0.44);
+
+
+
+/* ex. juandelacruz@gmail.com */
+
+position: absolute;
+width: 255px;
+height: 15px;
+left: 60px;
+top: 394px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: rgba(0, 0, 0, 0.44);
+
+
+
+/* ********************** */
+
+position: absolute;
+width: 255px;
+height: 15px;
+left: 60px;
+top: 474px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: rgba(0, 0, 0, 0.44);
+
+
+
+/* Group 57 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 532px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 532px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+box-sizing: border-box;
+border-radius: 24px;
+
+
+/* Confirm Password* */
+
+position: absolute;
+width: 138px;
+height: 21px;
+left: 43px;
+top: 511px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+
+color: #4D4D4D;
+
+
+
+/* ********************** */
+
+position: absolute;
+width: 255px;
+height: 15px;
+left: 60px;
+top: 545px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: rgba(0, 0, 0, 0.44);
+
+
+
+/* Group 54 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 607px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 292px;
+height: 40px;
+left: 43px;
+top: 607px;
+
+background: #1E1E1E;
+box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+
+
+/* Group 2 */
+
+position: absolute;
+width: 50px;
+height: 24px;
+left: 163px;
+top: 615px;
+
+
+
+/* ENTER */
+
+position: absolute;
+width: 50px;
+height: 24px;
+left: 163px;
+top: 615px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* By signing up, you agree to Photo’s */
+
+position: absolute;
+width: 263px;
+height: 40px;
+left: 57px;
+top: 666px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+color: #372410;
+
+
+
+/* and */
+
+position: absolute;
+width: 29px;
+height: 18px;
+left: 177px;
+top: 688px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+color: #000000;
+
+
+
+/* Privacy Policy. */
+
+position: absolute;
+width: 100px;
+height: 18px;
+left: 209px;
+top: 686px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+text-decoration-line: underline;
+
+color: #FF4F4F;
+
+
+
+/* Terms of Service */
+
+position: absolute;
+width: 117px;
+height: 18px;
+left: 57px;
+top: 687px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+text-decoration-line: underline;
+
+color: #FF4F4F;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 103px;
+height: 103px;
+left: 297px;
+top: 28px;
+
+background: rgba(255, 255, 255, 0.08);
+
+
+/* Group 61 */
+
+position: absolute;
+width: 487px;
+height: 301px;
+left: -84px;
+top: -107px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 375px;
+height: 193px;
+left: 0px;
+top: 1px;
+
+background: #4484FF;
+box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 103px;
+height: 103px;
+left: 300px;
+top: 39px;
+
+background: rgba(255, 255, 255, 0.08);
+
+
+/* Group 52 */
+
+position: absolute;
+width: 323px;
+height: 84px;
+left: 25px;
+top: 67px;
+
+
+
+/* WE DETECT */
+
+position: absolute;
+width: 323px;
+height: 81.9px;
+left: 25px;
+top: 67px;
+
+font-family: Racing Sans One;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 63px;
+text-align: center;
+
+color: #1E1E1E;
+
+
+
+/* Contact Tracing */
+
+position: absolute;
+width: 175.89px;
+height: 26.21px;
+left: 97.55px;
+top: 124.79px;
+
+font-family: Racing Sans One;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 19px;
+text-align: center;
+
+color: #1E1E1E;
+
+
+
+/* + */
+
+position: absolute;
+width: 195px;
+height: 97px;
+left: -84px;
+top: -22.81px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 220px;
+line-height: 330px;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.08);
+
+transform: rotate(-25.58deg);
