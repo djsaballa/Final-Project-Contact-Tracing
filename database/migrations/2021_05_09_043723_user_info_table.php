@@ -18,7 +18,7 @@ class UserInfoTable extends Migration
             $table->string('name', 50);
             $table->string('email')->unique();
             $table->string('address');
-            $table->bigInteger('phone_number');
+            $table->bigInteger('phone_number')->unique();
             $table->bigInteger('body_temp');
             $table->bigInteger('age');
             $table->timestamps();

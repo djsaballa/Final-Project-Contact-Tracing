@@ -12,12 +12,16 @@
     </head>
     <body>
 
-    <h1 style="text-align: center; margin: 15px;">Bible Study Requests</h1>
+    <h1 style="text-align: center; margin-top: 15px;">We Detect</h1>
+    <h5 style="text-align: center;">Contact Tracing</h5>
+
+    <h5 style="margin: 15px;">Admin</h5>
 
         <table id="table_list" class="display">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>No.</th>
+                    <th>QR ID</th>
                     <th>Complete Name</th>
                     <th>Email Address</th>
                     <th>Home Address</th>
@@ -34,6 +38,7 @@
                 @foreach ($user_qr as $user_code)
                 <tr>
                     <td>{{ $user_code->id }}</td>
+                    <td>{{ $user_code->qr }}</td>
                     <td>{{ $user_data->name }}</td>
                     <td>{{ $user_data->email }}</td>
                     <td>{{ $user_data->address }}</td>

@@ -21,6 +21,12 @@
         </style>
     </head>
     <body class="antialiased">
-      <h1> Admin Welcome~~ </h1>
+        <h1 style="text-align: center; margin-top: 15px;">We Detect</h1>
+        <h3 style="text-align: center;">Contact Tracing</h3>
+
+        <h5 style="text-align: center; margin: 15px;">Admin</h5>
+        
+        <a href='/admin-login'> <button> Login </button> </a>
+
     </body>
 </html>
