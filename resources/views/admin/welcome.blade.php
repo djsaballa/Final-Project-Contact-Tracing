@@ -26,11 +26,7 @@
 
         <h5 style="text-align: center; margin: 15px;">Admin</h5>
         
-        <form style="text-align: center;">
-            <button>
-                <a href='/admin-login'>  Login </a> 
-            </button>
-        </form>
+        <a href='/admin-login'> <button> Login </button> </a>
 
     </body>
 </html>

@@ -26,13 +26,7 @@
 
         <h5 style="text-align: center; margin: 15px;">Admin</h5>
 
-        <form style="text-align: center;">
-            <button>
-                <a href='/admin-receiver-qr'> Scan QR Code </a> 
-            </button>
-            <button>
-                <a href='/admin-table-list'> Guest List </a> 
-            </button>
-        </form>
+        <a href='/admin-receiver-qr'> <button> Scan QR Code </button> </a>
+        <a href='/admin-table-list'> <button> Guest List </button> </a>
     </body>
 </html>
