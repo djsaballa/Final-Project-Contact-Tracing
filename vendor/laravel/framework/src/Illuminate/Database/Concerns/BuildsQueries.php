@@ -8,6 +8,11 @@ use Illuminate\Database\RecordsNotFoundException;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\LazyCollection;
+use InvalidArgumentException;
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
 
 trait BuildsQueries
 {

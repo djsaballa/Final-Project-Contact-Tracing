@@ -454,6 +454,37 @@ class Migrator
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Resolve a migration instance from a migration path.
+     *
+     * @param  string  $path
+     * @return object
+     */
+    protected function resolvePath(string $path)
+    {
+        $class = $this->getMigrationClass($this->getMigrationName($path));
+
+        if (class_exists($class) && realpath($path) == (new ReflectionClass($class))->getFileName()) {
+            return new $class;
+        }
+
+        return $this->files->getRequire($path);
+    }
+
+    /**
+     * Generate a migration class name based on the migration file name.
+     *
+     * @param  string  $migrationName
+     * @return string
+     */
+    protected function getMigrationClass(string $migrationName): string
+    {
+        return Str::studly(implode('_', array_slice(explode('_', $migrationName), 4)));
+    }
+
+    /**
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
      * Get all of the migration files in a given path.
      *
      * @param  string|array  $paths

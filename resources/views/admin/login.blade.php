@@ -15,6 +15,7 @@
                     <div class="alert" style="color: red;">
                         {{ Session::get('fail') }}
                     </div>
+                    <br>
                 @endif
 
                 @csrf

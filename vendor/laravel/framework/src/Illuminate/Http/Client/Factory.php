@@ -34,6 +34,11 @@ use PHPUnit\Framework\Assert as PHPUnit;
  * @method \Illuminate\Http\Client\PendingRequest withoutVerifying()
  * @method \Illuminate\Http\Client\PendingRequest dump()
  * @method \Illuminate\Http\Client\PendingRequest dd()
+<<<<<<< HEAD
+=======
+ * @method \Illuminate\Http\Client\PendingRequest async()
+ * @method array pool(callable $callback)
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
  * @method \Illuminate\Http\Client\Response delete(string $url, array $data = [])
  * @method \Illuminate\Http\Client\Response get(string $url, array $query = [])
  * @method \Illuminate\Http\Client\Response head(string $url, array $query = [])

@@ -1445,6 +1445,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v8.32.1",
             "version_normalized": "8.32.1.0",
             "source": {
@@ -1456,6 +1457,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/7c37b64f8153c16b6406f5c28cf37828ebbe8846",
                 "reference": "7c37b64f8153c16b6406f5c28cf37828ebbe8846",
+=======
+            "version": "v8.40.0",
+            "version_normalized": "8.40.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "a654897ad7f97aea9d7ef292803939798c4a02a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a654897ad7f97aea9d7ef292803939798c4a02a4",
+                "reference": "a654897ad7f97aea9d7ef292803939798c4a02a4",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
                 "shasum": ""
             },
             "require": {
@@ -1569,7 +1583,11 @@
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
+<<<<<<< HEAD
             "time": "2021-03-09T15:37:45+00:00",
+=======
+            "time": "2021-04-28T14:38:56+00:00",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1616,6 +1634,7 @@
         },
         {
             "name": "laravel/sail",
+<<<<<<< HEAD
             "version": "v1.4.7",
             "version_normalized": "1.4.7.0",
             "source": {
@@ -1627,6 +1646,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/c57927e1e3919a317034ff706c684f01f15c10d8",
                 "reference": "c57927e1e3919a317034ff706c684f01f15c10d8",
+=======
+            "version": "v1.5.0",
+            "version_normalized": "1.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sail.git",
+                "reference": "7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116",
+                "reference": "7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
                 "shasum": ""
             },
             "require": {
@@ -1635,7 +1667,11 @@
                 "illuminate/support": "^8.0|^9.0",
                 "php": "^7.3|^8.0"
             },
+<<<<<<< HEAD
             "time": "2021-03-09T19:15:10+00:00",
+=======
+            "time": "2021-04-20T16:17:55+00:00",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
             "bin": [
                 "bin/sail"
             ],
@@ -1750,6 +1786,7 @@
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
             "version": "1.5.7",
             "version_normalized": "1.5.7.0",
             "source": {
@@ -1761,6 +1798,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/11df9b36fd4f1d2b727a73bf14931d81373b9a54",
                 "reference": "11df9b36fd4f1d2b727a73bf14931d81373b9a54",
+=======
+            "version": "1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "19a9673b833cc37770439097b381d86cd125bfe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/19a9673b833cc37770439097b381d86cd125bfe8",
+                "reference": "19a9673b833cc37770439097b381d86cd125bfe8",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
                 "shasum": ""
             },
             "require": {
@@ -1783,7 +1833,11 @@
                 "scrutinizer/ocular": "^1.5",
                 "symfony/finder": "^4.2"
             },
+<<<<<<< HEAD
             "time": "2020-10-31T13:49:32+00:00",
+=======
+            "time": "2021-05-01T19:00:49+00:00",
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
             "bin": [
                 "bin/commonmark"
             ],

@@ -32,6 +32,11 @@ use Illuminate\Http\Client\Factory;
  * @method static \Illuminate\Http\Client\PendingRequest withoutVerifying()
  * @method static \Illuminate\Http\Client\PendingRequest dump()
  * @method static \Illuminate\Http\Client\PendingRequest dd()
+<<<<<<< HEAD
+=======
+ * @method static \Illuminate\Http\Client\PendingRequest async()
+ * @method static array pool(callable $callback)
+>>>>>>> 5382f34cf07f03a04c95018f97f45d5d4f80a8ac
  * @method static \Illuminate\Http\Client\Response delete(string $url, array $data = [])
  * @method static \Illuminate\Http\Client\Response get(string $url, array $query = [])
  * @method static \Illuminate\Http\Client\Response head(string $url, array $query = [])
