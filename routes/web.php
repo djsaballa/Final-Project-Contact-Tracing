@@ -16,8 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-
 // User
 
 Route::get('/user-user-form', 'App\Http\Controllers\UserController@userForm');

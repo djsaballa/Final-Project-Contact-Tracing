@@ -9,8 +9,10 @@
             <h1>We Detect</h1>
             <h4>contact tracing</h4>   
             <br>
-             <div class="visible-print text-center">
-               QR-code display
+            <div class="visible-print text-center">
+             
+             <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" />
+            
             </div>
             <br>
             <h3>TRACE</h3>
