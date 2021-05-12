@@ -44,7 +44,7 @@ class Sequence
      */
     public function __invoke()
     {
-        if ($this->index >= $this->count) {
+        if ($this->index > ($this->count - 1)) {
             $this->index = 0;
         }
 

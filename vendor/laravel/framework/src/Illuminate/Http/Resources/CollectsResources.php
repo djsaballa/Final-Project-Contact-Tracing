@@ -2,7 +2,6 @@
 
 namespace Illuminate\Http\Resources;
 
-use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -31,7 +30,7 @@ trait CollectsResources
             ? $resource->mapInto($collects)
             : $resource->toBase();
 
-        return ($resource instanceof AbstractPaginator || $resource instanceof AbstractCursorPaginator)
+        return $resource instanceof AbstractPaginator
                     ? $resource->setCollection($this->collection)
                     : $this->collection;
     }

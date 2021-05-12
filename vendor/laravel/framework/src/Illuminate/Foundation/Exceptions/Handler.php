@@ -54,28 +54,28 @@ class Handler implements ExceptionHandlerContract
     /**
      * A list of the exception types that are not reported.
      *
-     * @var string[]
+     * @var array
      */
     protected $dontReport = [];
 
     /**
      * The callbacks that should be used during reporting.
      *
-     * @var \Illuminate\Foundation\Exceptions\ReportableHandler[]
+     * @var array
      */
     protected $reportCallbacks = [];
 
     /**
      * The callbacks that should be used during rendering.
      *
-     * @var \Closure[]
+     * @var array
      */
     protected $renderCallbacks = [];
 
     /**
      * The registered exception mappings.
      *
-     * @var array<string, \Closure>
+     * @var array
      */
     protected $exceptionMap = [];
 
