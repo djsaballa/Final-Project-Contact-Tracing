@@ -27,7 +27,7 @@ final class ATXHeadingParser implements BlockParserInterface
             return false;
         }
 
-        $match = RegexHelper::matchFirst('/^#{1,6}(?:[ \t]+|$)/', $cursor->getLine(), $cursor->getNextNonSpacePosition());
+        $match = RegexHelper::matchAll('/^#{1,6}(?:[ \t]+|$)/', $cursor->getLine(), $cursor->getNextNonSpacePosition());
         if (!$match) {
             return false;
         }

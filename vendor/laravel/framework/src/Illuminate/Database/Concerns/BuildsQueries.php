@@ -5,13 +5,9 @@ namespace Illuminate\Database\Concerns;
 use Illuminate\Container\Container;
 use Illuminate\Database\MultipleRecordsFoundException;
 use Illuminate\Database\RecordsNotFoundException;
-use Illuminate\Pagination\CursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
-use Illuminate\Support\LazyCollection;
-use InvalidArgumentException;
-use RuntimeException;
 
 trait BuildsQueries
 {
@@ -135,10 +131,6 @@ trait BuildsQueries
 
             $lastId = $results->last()->{$alias};
 
-            if ($lastId === null) {
-                throw new RuntimeException("The chunkById operation was aborted because the [{$alias}] column is not present in the query result.");
-            }
-
             unset($results);
 
             $page++;
@@ -165,76 +157,6 @@ trait BuildsQueries
                 }
             }
         }, $column, $alias);
-    }
-
-    /**
-     * Query lazily, by chunks of the given size.
-     *
-     * @param  int  $chunkSize
-     * @return \Illuminate\Support\LazyCollection
-     */
-    public function lazy($chunkSize = 1000)
-    {
-        if ($chunkSize < 1) {
-            throw new InvalidArgumentException('The chunk size should be at least 1');
-        }
-
-        $this->enforceOrderBy();
-
-        return LazyCollection::make(function () use ($chunkSize) {
-            $page = 1;
-
-            while (true) {
-                $results = $this->forPage($page++, $chunkSize)->get();
-
-                foreach ($results as $result) {
-                    yield $result;
-                }
-
-                if ($results->count() < $chunkSize) {
-                    return;
-                }
-            }
-        });
-    }
-
-    /**
-     * Query lazily, by chunking the results of a query by comparing IDs.
-     *
-     * @param  int  $count
-     * @param  string|null  $column
-     * @param  string|null  $alias
-     * @return \Illuminate\Support\LazyCollection
-     */
-    public function lazyById($chunkSize = 1000, $column = null, $alias = null)
-    {
-        if ($chunkSize < 1) {
-            throw new InvalidArgumentException('The chunk size should be at least 1');
-        }
-
-        $column = $column ?? $this->defaultKeyName();
-
-        $alias = $alias ?? $column;
-
-        return LazyCollection::make(function () use ($chunkSize, $column, $alias) {
-            $lastId = null;
-
-            while (true) {
-                $clone = clone $this;
-
-                $results = $clone->forPageAfterId($chunkSize, $lastId, $column)->get();
-
-                foreach ($results as $result) {
-                    yield $result;
-                }
-
-                if ($results->count() < $chunkSize) {
-                    return;
-                }
-
-                $lastId = $results->last()->{$alias};
-            }
-        });
     }
 
     /**
@@ -351,22 +273,6 @@ trait BuildsQueries
     {
         return Container::getInstance()->makeWith(Paginator::class, compact(
             'items', 'perPage', 'currentPage', 'options'
-        ));
-    }
-
-    /**
-     * Create a new cursor paginator instance.
-     *
-     * @param  \Illuminate\Support\Collection  $items
-     * @param  int  $perPage
-     * @param  \Illuminate\Pagination\Cursor  $cursor
-     * @param  array  $options
-     * @return \Illuminate\Pagination\Paginator
-     */
-    protected function cursorPaginator($items, $perPage, $cursor, $options)
-    {
-        return Container::getInstance()->makeWith(CursorPaginator::class, compact(
-            'items', 'perPage', 'cursor', 'options'
         ));
     }
 }

@@ -324,7 +324,7 @@ class Stringable implements JsonSerializable
      * Convert GitHub flavored Markdown into HTML.
      *
      * @param  array  $options
-     * @return static
+     * @return string
      */
     public function markdown(array $options = [])
     {
@@ -335,7 +335,7 @@ class Stringable implements JsonSerializable
      * Get the string matching the given pattern.
      *
      * @param  string  $pattern
-     * @return static
+     * @return static|null
      */
     public function match($pattern)
     {
@@ -426,7 +426,7 @@ class Stringable implements JsonSerializable
     /**
      * Call the given callback and return a new string.
      *
-     * @param  callable  $callback
+     * @param callable $callback
      * @return static
      */
     public function pipe(callable $callback)
@@ -468,29 +468,6 @@ class Stringable implements JsonSerializable
     }
 
     /**
-     * Remove any occurrence of the given string in the subject.
-     *
-     * @param  string|array<string>  $search
-     * @param  bool  $caseSensitive
-     * @return static
-     */
-    public function remove($search, $caseSensitive = true)
-    {
-        return new static(Str::remove($search, $this->value, $caseSensitive));
-    }
-
-    /**
-     * Repeat the string.
-     *
-     * @param  int  $times
-     * @return static
-     */
-    public function repeat(int $times)
-    {
-        return new static(Str::repeat($this->value, $times));
-    }
-
-    /**
      * Replace the given value in the given string.
      *
      * @param  string|string[]  $search
@@ -499,7 +476,7 @@ class Stringable implements JsonSerializable
      */
     public function replace($search, $replace)
     {
-        return new static(Str::replace($search, $replace, $this->value));
+        return new static(str_replace($search, $replace, $this->value));
     }
 
     /**
@@ -662,7 +639,7 @@ class Stringable implements JsonSerializable
      */
     public function substrCount($needle, $offset = null, $length = null)
     {
-        return Str::substrCount($this->value, $needle, $offset ?? 0, $length);
+        return Str::substrCount($this->value, $needle, $offset, $length);
     }
 
     /**
@@ -709,19 +686,6 @@ class Stringable implements JsonSerializable
     }
 
     /**
-     * Apply the callback's string changes if the given "value" is false.
-     *
-     * @param  mixed  $value
-     * @param  callable  $callback
-     * @param  callable|null  $default
-     * @return mixed|$this
-     */
-    public function unless($value, $callback, $default = null)
-    {
-        return $this->when(! $value, $callback, $default);
-    }
-
-    /**
      * Apply the callback's string changes if the given "value" is true.
      *
      * @param  mixed  $value
@@ -758,23 +722,6 @@ class Stringable implements JsonSerializable
     }
 
     /**
-     * Execute the given callback if the string is not empty.
-     *
-     * @param  callable  $callback
-     * @return static
-     */
-    public function whenNotEmpty($callback)
-    {
-        if ($this->isNotEmpty()) {
-            $result = $callback($this);
-
-            return is_null($result) ? $this : $result;
-        }
-
-        return $this;
-    }
-
-    /**
      * Limit the number of words in a string.
      *
      * @param  int  $words
@@ -784,16 +731,6 @@ class Stringable implements JsonSerializable
     public function words($words = 100, $end = '...')
     {
         return new static(Str::words($this->value, $words, $end));
-    }
-
-    /**
-     * Get the number of words a string contains.
-     *
-     * @return int
-     */
-    public function wordCount()
-    {
-        return str_word_count($this->value);
     }
 
     /**
