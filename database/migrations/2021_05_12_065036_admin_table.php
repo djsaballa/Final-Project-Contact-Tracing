@@ -20,6 +20,13 @@ class AdminTable extends Migration
             $table->text('password');
             $table->timestamps();
         });
+
+        DB::table('admin')->insert(
+            array(
+                'username' => 'admin',
+                'password' => 'adminpass',
+            )
+        );
     }
 
     /**
@@ -29,6 +36,6 @@ class AdminTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('admin');
     }
 }

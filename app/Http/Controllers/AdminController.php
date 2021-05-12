@@ -13,7 +13,7 @@ class AdminController extends Controller
 {
     public function welcome(Request $request)
     {
-        return view('/admin/welcome');
+        return view('/admin/welcome', $data);
     }
 
     public function navigation(Request $request)
@@ -28,19 +28,22 @@ class AdminController extends Controller
 
     public function loginAuth(Request $request)
     {
+        //return $request->input();
+
         $request->validate ([
             'username' => 'required',
-            'password' => 'required|min:3'
+            'password' => 'required'
         ]);
 
         $loginInfo = Admin::where('username','=', $request->username)->first();
 
         if(!$loginInfo){
-            return back()->with('fail','Username not recognized');
+            return back()->with('fail','Incorrect username');
         }else{
+            //check password
             if(Hash::check($request->password, $loginInfo->password)){
-                $request->session()->put('LoggedUser', $loginInfo->id);
                 return redirect('/admin-navigation');
+
             }else{
                 return back()->with('fail','Incorrect password');
             }
