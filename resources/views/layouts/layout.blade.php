@@ -19,6 +19,7 @@
                 font-family: 'Nunito', sans-serif;
                 background: black;
                 color: white;
+                text-align: center;
             }
             footer {
                 padding: 20px;

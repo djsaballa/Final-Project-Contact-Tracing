@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 Route::get('/user-user-form', 'App\Http\Controllers\UserController@userForm');
 
+Route::post('/user-user-create', 'App\Http\Controllers\UserController@userCreate');
+
 Route::get('/user-qr-code', 'App\Http\Controllers\UserController@qrCode');
 
 Route::get('/user-privacy-policy', 'App\Http\Controllers\UserController@privacyPolicy');

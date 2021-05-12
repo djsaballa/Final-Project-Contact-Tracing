@@ -6,7 +6,9 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
-            <h1>WE DETECT</h1><br>
+            <h1>WE DETECT</h1>
+            <h4>contact tracing</h4>
+            <br>
             <h3>Privacy & Policy</h3><br>
 
             <p>
@@ -32,8 +34,8 @@
             - Cell phone number
             - Address/ city/ country
             - E-mail Address
-            -Age
-            -Body temp
+            - Age
+            - Body temp
             </p>
 
             <p>
