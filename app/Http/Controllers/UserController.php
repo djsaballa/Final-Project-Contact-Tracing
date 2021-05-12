@@ -36,33 +36,6 @@ class UserController extends Controller
             return redirect('/user-qr-code');
     }
 
-    function userForm(){
-        $data = ['cts'=>Cts::all()];
-        return view('/user/user-form',$data);
-    }
-    function save(Request $request){
-        /** Validate name field */
-        $request->validate([
-            'name'=>'required',
-        ]);
-
-        $user_info = $request->fullname;
-        $unique_id = Helper::IDGenerator(new Cts, 'unique_id', 3, 'CTS'); /** Generate id */
-        $q = new Cts;
-        $q->unique_id = $unique_id;
-        $q->name = $unique_name;
-        $save =  $q->save();
-
-        if ($user_info->save()) {
-
-            return redirect('/user-qr-code');
-
-        }
-        
-        return redirect('/user-qr-code');
-
-
-    }
     
     // for qr-code
     public function qrCode(Request $request)
