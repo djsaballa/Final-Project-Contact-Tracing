@@ -11,11 +11,11 @@
             <br>
             <div class="visible-print text-center">
              
-             <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" />
+             <img src="https://api.qrserver.com/v1/create-qr-code/?data=jordan&amp;size=100x100" alt="" title="" id="user_qr"/>
             
             </div>
             <br>
-            <h3>TRACE</h3>
+            <h3>qr_id</h3>
             <br>
             <h2>Thank You!</h2>
             <br>
