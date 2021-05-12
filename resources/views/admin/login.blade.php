@@ -27,19 +27,28 @@
         <h5 style="text-align: center; margin: 15px;">Admin</h5>
 
         <form method="POST" action="/admin-login-auth"  style="text-align: center;">
+                @if(Session::get('fail'))
+                    <div class="alert" style="color: red;">
+                        {{ Session::get('fail') }}
+                    </div>
+                @endif
+
                 @csrf
 
-                Username:
-                <input type="text" name="name" value="{{ $username ?? '' }}"/>
+                <label> Username: </label>
+                <input type="text" name="username" placeholder="Enter username" value="{{ old('username') }}"/>
                 <br>
+                <span class="error" style="color: red;">@error('username'){{ $message }} @enderror</span>
                 <br>
 
-                Password:
-                <input type="password" name="password" value="{{ $password ?? '' }}"/>
+                <label> Password: <label>
+                <input type="password" name="password" placeholder="Enter password"/>
                 <br>
+                <span class="error" style="color: red;">@error('password'){{ $message }} @enderror</span>
                 <br>
 
                 <button type="submit"> Login </button>
         </form>
+
     </body>
 </html>

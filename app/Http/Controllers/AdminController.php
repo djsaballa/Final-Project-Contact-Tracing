@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserInfo;
 use App\Models\UserQr;
+use App\Models\Admin;
+use Illuminate\Support\Facades\Hash;
 
 
 class AdminController extends Controller
@@ -26,9 +28,23 @@ class AdminController extends Controller
 
     public function loginAuth(Request $request)
     {
-        $username ;
-        $password ;
+        $request->validate ([
+            'username' => 'required',
+            'password' => 'required|min:3'
+        ]);
 
+        $loginInfo = Admin::where('username','=', $request->username)->first();
+
+        if(!$loginInfo){
+            return back()->with('fail','Username not recognized');
+        }else{
+            if(Hash::check($request->password, $loginInfo->password)){
+                $request->session()->put('LoggedUser', $loginInfo->id);
+                return redirect('/admin-navigation');
+            }else{
+                return back()->with('fail','Incorrect password');
+            }
+        }
     }
 
     public function receiverQr(Request $request)
