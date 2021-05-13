@@ -39,7 +39,7 @@
 
     <h5 style="margin: 15px;">Admin</h5>
 
-        <table id="table_list" class="display">
+        <table id="table_details" class="display">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -77,15 +77,7 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
     <script>
     jQuery(document).ready(function(){
-        jQuery('#table_list').DataTable();
+        jQuery('#table_details').DataTable();
     });
     </script>
 </html>
-
-
-<h1>{{ $user_info->name }}</h1>
-
-<p>
-{{ $user_info->email }}
-</p>
-
