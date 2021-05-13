@@ -18,8 +18,9 @@
             </div>
             <br>
             <h3 class="text-primary"> <strong>Privacy & Policy</strong></h3><br>
-
-            <p class="poppins container">
+      
+            <div class="container poppins left">
+        <p>
             Identify is a webapp that automates manual contact tracing by using QR code scanning such that the tracing process done in several days can now be achieved in just few minutes.
 
             An in-app notification will be sent to Identify contact tracing registered individuals who may have come in contact with an identified Covid-19 positive patient so that they can observe precautions and start self-isolation if symptoms occur to protect their families and loved ones.
@@ -153,7 +154,10 @@
 
             If you have any questions about the Privacy Statement or any other questions regarding our privacy practices, please contact us at: TRAZE@cosmotech.com.ph
             </p>
-            
+
+            </div>
+           
+
                 <div class="container mt-3 mb-3">
                         <a class="btn btn-dark btn lg form-rounded custom-button1" href="/user-user-form"><h5>Back</h5></a>
                 </div>

@@ -36,7 +36,7 @@
         @yield('content') 
 
     </body>
-    <footer style="color: black;">
-            <h5 style=" font-size: 13px;">Copyright 2021 | GROUP 7</h5>
+    <footer class="poppins border-top" style="color: black;">
+            <h5 style="font-size: 13px;"><strong>Copyright 2021 | GROUP 7</strong></h5>
     </footer>
 </html>
