@@ -3,13 +3,24 @@
 
 @section('content')
 
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/main.css') }}" />
+</head>
+<body>
 
-            <h1>WE DETECT</h1>
-            <h4>contact tracing</h4>
-            <br>  
+        <div class="">
+            <img src="{{ URL::to('../../resources/images/heading.png') }}">
+            <h1 class="font">WE DETECT</h1>
+            <h4 class="font">contact tracing</h4>
+        </div>
 
+        <br>
+
+        <div class="">
             <form action="/user-user-create" method="POST">
 
                 @csrf 
@@ -34,16 +45,20 @@
                 <label for="age" class="" >Age:</label>
                 <input type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19"><br>
 
-                <button type="submit" value="submit" class="">Submit</button>
+                <button class="btn btn-primary" type="submit" value="submit" class="">Submit</button>
 
             </form>
-
+        </div>
+        <div class="">
             <input type="checkbox" id="check" name="check" value="agree">
             <label for="check"> check if  you agree.</label><br><br>
+        </div>
 
             <a>By signing up, you agree to</a><br>
             <a href="/user-terms-condition">Terms of Service &nbsp;&nbsp;</a>and&nbsp;&nbsp;<a href="/user-privacy-policy">Privacy Policy.</a>
         </div>
     </div>
+</body>
+</html>
 
 @endsection
