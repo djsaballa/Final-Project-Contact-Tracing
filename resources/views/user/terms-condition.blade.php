@@ -61,7 +61,10 @@
             If you believe that Content accessible via the application infringes your rights, you may submit a notification to TRAZE@cosmotech.com.ph in which you provide the following information: (a) identification of the rights/works that are being infringed upon; (b) identification of the Content that is infringing your rights (including URL(s) for the Content); (c) your name, address, telephone number, and electronic mail address; (d) a statement that you have a good faith belief that use of the Content in the manner complained of is not authorized by the rights holder, its agent, or the law; (e) a statement that the information in the notification is accurate and, under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
                     
            </P>
-            
+           <a href="/user-user-form">
+                <button type="submit"class="">return</button>
+            </a>
+          
         </div>
     </div>
 

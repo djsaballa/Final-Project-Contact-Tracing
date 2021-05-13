@@ -50,11 +50,29 @@ class AdminController extends Controller
         }
     }
 
-    public function receiverQr(Request $request)
+    // for reciever
+    public function receiverQrForm(Request $request)
     {
-        return view('/admin/receiver-qr');
+        $user_qr= new UserQr();
+        return view('/admin/receiver-qr', compact('user_qr'));
     }
 
+    public function receiverQrFormCode(Request $request)
+    {
+        $user_qr= new UserQr();
+    
+        $user_qr->qr = $request-> qr;
+       
+        if ($user_qr->save()) {
+
+            return redirect('/admin-receiver-qr');
+
+        }
+        
+        return redirect('/admin-receiver-qr');
+    }
+    
+    // for table
     public function tableList (Request $request)
     {
         $user_info = UserInfo::all();
