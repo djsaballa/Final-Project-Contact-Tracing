@@ -13,7 +13,7 @@ class AdminController extends Controller
 {
     public function welcome(Request $request)
     {
-        return view('/admin/welcome', $data);
+        return view('/admin/welcome');
     }
 
     public function navigation(Request $request)
