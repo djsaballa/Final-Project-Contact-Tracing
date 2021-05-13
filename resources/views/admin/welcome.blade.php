@@ -25,7 +25,7 @@
 
                 <h5 class="font text-white mb-5" style="text-align: center; margin: 15px;">Admin</h5>
                 
-                <div class="mt-5">
+                <div class="centered mt-5">
                         <a href="/admin-login">
                                 <button type="submit" class="choice btn-lg btn-primary font form-rounded">Login</button>
                         </a>
