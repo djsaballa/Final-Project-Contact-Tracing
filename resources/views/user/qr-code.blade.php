@@ -29,6 +29,7 @@
 
             <h1 class="sora"><strong>Thank You!</strong></h1>
             <br>
+
             <p class="poppins"><strong>You have successfully <br>
             submitted your information</strong></p>
             <br>
@@ -37,7 +38,9 @@
                 <button class="btn btn-dark btn-lg form-rounded custom-button mb-4  " type="submit"class="">Exit</button>
             </a>
             <br>
-            <a href="/user-user-form"class="poppins text-dark">Return</a>
+            <div class="container mb-5">
+                <a href="/user-user-form" class="poppins text-dark">Return</a>
+            </div>
         </div>
     </div>
 
