@@ -24,7 +24,7 @@ class AdminTable extends Migration
         DB::table('admin')->insert(
             array(
                 'username' => 'admin',
-                'password' => 'adminpass',
+                'password' => Hash::make('adminpass')
             )
         );
     }
