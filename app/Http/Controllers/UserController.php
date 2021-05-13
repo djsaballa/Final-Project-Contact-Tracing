@@ -23,9 +23,9 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:user_info',
             'address' => 'required',
-            'phone_number' => 'numeric',
-            'body_temp' => 'numeric',
-            'age' => 'numeric',
+            'phone_number' => 'required|digits:11|unique:user_info',
+            'body_temp' => 'required|numeric',
+            'age' => 'required|numeric',
 
         ]);
 
