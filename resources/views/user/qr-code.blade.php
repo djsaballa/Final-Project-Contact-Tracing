@@ -15,7 +15,7 @@
 <body>
 
             <div class="font mt-5 mb-5">
-                <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
+                <h1 class="font" style="font-size: 60px;">WE DETECT</h1>
             </div>
 
             <br>
