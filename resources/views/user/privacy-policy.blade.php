@@ -155,6 +155,11 @@
 
             If you have any questions about the Privacy Statement or any other questions regarding our privacy practices, please contact us at: TRAZE@cosmotech.com.ph
             </p>
+<<<<<<< HEAD
+            <a href="/user-user-form">
+                <button type="submit"class="">return</button>
+            </a>
+=======
 
             </div>
            
@@ -162,6 +167,7 @@
                 <div class="container mt-3 mb-3">
                         <a class="btn btn-dark btn lg form-rounded custom-button1" href="/user-user-form"><h5>Back</h5></a>
                 </div>
+>>>>>>> b02158679526245d310823ff993a4e01fb1949e5
         </div>
     </div>
 

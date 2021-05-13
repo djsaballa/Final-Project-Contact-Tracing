@@ -24,8 +24,8 @@
                     <P class="container">
                     
                         <div class="container left ml-5 mr-5">
-                            Identify is an application that can perform the contact tracing of individuals and all the persons whom he got in contact within seconds. identify web app is developed and owned by group 5
-                        </div>
+                            Identify is an application that can perform the contact tracing of individuals and all the persons whom he got in contact within seconds. identify web app is developed and owned by group 7
+                            </div>
                         <br>
                         
                         <div class="left">1. This is a Contract</div>
