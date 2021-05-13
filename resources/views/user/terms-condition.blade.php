@@ -18,7 +18,7 @@
                         <h4 class="font" style="font-size: 14px;">contact tracing</h4>
                     </div>
                     <br>
-                    <h3 class="text-primary"> <strong>Privacy & Policy</strong></h3><br>
+                    <h3 class="text-primary"> <strong>Terms & Condition</strong></h3><br>
 
 
                     <P class="container">

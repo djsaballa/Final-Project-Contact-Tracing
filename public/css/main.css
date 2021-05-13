@@ -6,6 +6,10 @@
 
   .poppins {
     font-family: 'Poppins' !important;
+    text-decoration: none;
+  }
+  .sora {
+    font-family: 'Sora' !important;
   }
   .containers {
     height: 30%;
@@ -35,7 +39,7 @@
 
   .form-rounded {
     border-radius: 2rem;
-    }
+  }
 
   .custom-button {
     padding-left: 35%;
