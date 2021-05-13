@@ -13,15 +13,16 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
     
-    <div class="text-white">
+    <div class="text-white containers centered">
         <h1 class="font">WE DETECT</h1>
         <h4 class="font">contact tracing</h4>
     </div>
-    <br>
+    <br>    
+        <div class="centered">
 	        <a href="/user-user-form">
 	            <button type="submit" class="choice btn btn-primary font">START</button>
 	        </a>
-        
+        </div> 
     </div>
 </div>
 
