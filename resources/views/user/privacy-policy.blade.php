@@ -22,15 +22,15 @@
       
             <div class="container poppins left">
         <p>
-            Identify is a webapp that automates manual contact tracing by using QR code scanning such that the tracing process done in several days can now be achieved in just few minutes.
+           WE is a webapp that automates manual contact tracing by using QR code scanning such that the tracing process done in several days can now be achieved in just few minutes.
 
-            An in-app notification will be sent to Identify contact tracing registered individuals who may have come in contact with an identified Covid-19 positive patient so that they can observe precautions and start self-isolation if symptoms occur to protect their families and loved ones.
+            An in-app notification will be sent to WE DETECT contact tracing registered individuals who may have come in contact with an identified Covid-19 positive patient so that they can observe precautions and start self-isolation if symptoms occur to protect their families and loved ones.
 
-            Identify contact tracing is a project of the Philippine Ports Authority (PPA) in cooperation with Cosmotech Philippines Inc. PPA is the Data Controller, while Cosmotech Philippines Inc as the developer of the apps, is the Data Processor.
+            WE DETECT contact tracing is a project of the Philippine Ports Authority (PPA) in cooperation with Cosmotech Philippines Inc. PPA is the Data Controller, while Cosmotech Philippines Inc as the developer of the apps, is the Data Processor.
 
-            Identify contact tracing aims for full transparency about the personal data that it processes when you use this application. Pursuant to the Republic Act No. 10173 (Data Privacy Act), this Privacy Statement explains, among other things, what information we collect, why we collect it, and how we use the information.
+            WE DETECT contact tracing aims for full transparency about the personal data that it processes when you use this application. Pursuant to the Republic Act No. 10173 (Data Privacy Act), this Privacy Statement explains, among other things, what information we collect, why we collect it, and how we use the information.
 
-            The Privacy Statement applies to all end users of Identify contact tracing Individuals.
+            The Privacy Statement applies to all end users of WE DETECT contact tracing Individuals.
             </p><br>
 
             <p>
@@ -51,7 +51,7 @@
             <p>
             2. WHY WE PROCESS PERSONAL DATA AND THE LEGAL BASIS FOR OUR PROCESSING
 
-            We only process your data for purposes that are objectively justified by Identify contact tracing and only as stated in this Privacy Statement. We process this data with respect to your right to privacy, including the need to protect personal integrity and private life and to ensure that your personal data is adequately protected against the risk of loss, misuse and unintended alteration.
+            We only process your data for purposes that are objectively justified by WE DETECT contact tracing and only as stated in this Privacy Statement. We process this data with respect to your right to privacy, including the need to protect personal integrity and private life and to ensure that your personal data is adequately protected against the risk of loss, misuse and unintended alteration.
 
             Unless you are offered the option to provide prior consent to our use of your data, we process your data, pursuant to Mandatory Reporting of Notifiable Diseases and Health Events of Public Health Concern Act , RA 11332, and Privacy Act (DPA) RA 10173 - Section 12. Criteria for Lawful Processing of Personal Information. We collect data for the contact tracing of individuals and all the persons whom he got in contact with, given that they are registered under the Traze Contact Tracing App.
 

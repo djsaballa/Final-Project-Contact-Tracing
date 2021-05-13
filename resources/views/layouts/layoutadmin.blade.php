@@ -25,7 +25,7 @@
             }
             footer {
                 padding: 20px;
-                color: white;
+                color: black;
                 text-align: center;
             }
         </style>
