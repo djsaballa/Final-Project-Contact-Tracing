@@ -61,8 +61,8 @@
                     <td>{{ $user_info->body_temp }}</td>
                     <td>{{ $user_info->age }}</td>
                     <td>
-                        <a href="/admin-table-list">
-                        <button type="submit"> GO BACK </button>
+                        <a href="/admin-table-list" class="btn btn-primary">
+                        GO BACK
                         </a>
                     </td>
                 </tr>

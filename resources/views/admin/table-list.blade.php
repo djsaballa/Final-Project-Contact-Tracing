@@ -58,8 +58,8 @@
                     <td>{{ $user_code->created_at }}</td>
                     <td>{{ $user_code->updated_at }}</td>
                     <td>
-                        <a href="/admin-table-details/{{ $user_code->user_id }}">
-                        <button type="submit"> VIEW </button>
+                        <a href="/admin-table-details/{{ $user_code->user_id }}" class="btn btn-primary">
+                        VIEW
                         </a>
                     </td>
                 </tr>
