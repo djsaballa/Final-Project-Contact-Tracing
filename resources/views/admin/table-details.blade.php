@@ -42,28 +42,30 @@
         <table id="table_list" class="display">
             <thead>
                 <tr>
-                    <th>No.</th>
-                    <th>QR Code</th>
-                    <th>Time In</th>
-                    <th>Time Out</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone No.</th>
+                    <th>Body Temperature</th>
+                    <th>Age</th>
                     <th>&nbsp;</th>
                 </tr>
             </thead>
 
             <tbody>
-                @foreach ($user_qr as $user_code)
                 <tr>
-                    <td>{{ $user_code->id }}</td>
-                    <td>{{ $user_code->qr }}</td>
-                    <td>{{ $user_code->created_at }}</td>
-                    <td>{{ $user_code->updated_at }}</td>
+                    <td>{{ $user_info->name }}</td>
+                    <td>{{ $user_info->email }}</td>
+                    <td>{{ $user_info->address }}</td>
+                    <td>{{ $user_info->phone_number }}</td>
+                    <td>{{ $user_info->body_temp }}</td>
+                    <td>{{ $user_info->age }}</td>
                     <td>
-                        <a href="/admin-table-details/{{ $user_code->user_id }}" class="btn btn-primary">
-                        VIEW
+                        <a href="/admin-table-list" class="btn btn-primary">
+                        GO BACK
                         </a>
                     </td>
                 </tr>
-                @endforeach
             </tbody>
         </table>
         </div>
@@ -79,4 +81,11 @@
     });
     </script>
 </html>
+
+
+<h1>{{ $user_info->name }}</h1>
+
+<p>
+{{ $user_info->email }}
+</p>
 
