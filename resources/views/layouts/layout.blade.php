@@ -20,7 +20,7 @@
             body {
                 font-family: 'Nunito', sans-serif;
                 background: black;
-                color: white;
+                color: black;
                 text-align: center;
             }
             footer {

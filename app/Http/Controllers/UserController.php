@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\UserInfo;
 use App\Models\UserQr;
 
@@ -18,8 +19,17 @@ class UserController extends Controller
 
     public function userCreate(Request $request)
     {
-            $user_info  = new UserInfo();
+        $request->validate ([
+            'name' => 'required',
+            'email' => 'required|email|unique:user_info',
+            'address' => 'required',
+            'phone_number' => 'numeric',
+            'body_temp' => 'numeric',
+            'age' => 'numeric',
 
+        ]);
+
+            $user_info  = new UserInfo();
             $user_info->name = $request-> name;
             $user_info->email = $request->email;
             $user_info->address = $request->address;
@@ -28,23 +38,20 @@ class UserController extends Controller
             $user_info->age = $request->age;
     
             if ($user_info->save()) {
-
+                $request->session()->put('LoggedUser', $user_info->id);
                 return redirect('/user-qr-code');
 
             }
             
-            return redirect('/user-qr-code');
+            return redirect('/user-user-form');
     }
 
     
     // for qr-code
-
     public function qrCode(Request $request)
     {
-
-        $user_info = UserInfo::all();
-
-        return view('/user/qr-code', compact('user_info'));
+        $data = ['LoggedUserInfo'=>UserInfo::where('id','=', session('LoggedUser'))->first()];
+        return view('/user/qr-code', $data);
     }
 
 

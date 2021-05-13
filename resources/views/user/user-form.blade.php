@@ -29,33 +29,45 @@
 
             <div class="left">              
                 <label for="name">Name:</label>
-                <input class="form-control" type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz"><br>
-            </div> 
+                <input class="form-control" type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz">
+                <span class="error" style="color: red;">@error('name'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
             <div class="left">
                 <label for="email" class="" >Email:</label>
-                <input class="form-control" type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com"><br>
+                <input class="form-control" type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com">
+                <span class="error" style="color: red;">@error('email'){{ $message }} @enderror</span>
             </div>
+            <br>
 
             <div class="left">
                 <label for="address" class="" >Address:</label>
-                <input class="form-control" type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga"><br>
+                <input class="form-control" type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga">
+                <span class="error" style="color: red;">@error('address'){{ $message }} @enderror</span>
             </div>
+            <br>
 
             <div class="left">
                 <label for="phone_number" class="" >Phone No.:</label>
-                <input class="form-control" type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx"><br>
+                <input class="form-control" type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx">
+                <span class="error" style="color: red;">@error('phone_number'){{ $message }} @enderror</span>
             </div>
+            <br>
 
             <div class="left">
                 <label for="body_temp" class="" >Body Temperature:</label>
-                <input class="form-control" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5"><br>
+                <input class="form-control" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5">
+                <span class="error" style="color: red;">@error('body_temp'){{ $message }} @enderror</span>
             </div>
+            <br>
 
             <div class="left">
                 <label for="age" class="" >Age:</label>
-                <input class="form-control" type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19"><br>
+                <input class="form-control" type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19">
+                <span class="error" style="color: red;">@error('age'){{ $message }} @enderror</span>
             </div>
+            <br>
 
                 <button class="btn btn-primary" type="submit" value="submit" class="">Submit</button>
 

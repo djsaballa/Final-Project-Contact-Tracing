@@ -28,8 +28,6 @@ class AdminController extends Controller
 
     public function loginAuth(Request $request)
     {
-        //return $request->input();
-
         $request->validate ([
             'username' => 'required',
             'password' => 'required'
