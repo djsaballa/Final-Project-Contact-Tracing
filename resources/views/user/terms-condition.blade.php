@@ -23,15 +23,6 @@
 
                     <P class="container">
                     
-<<<<<<< HEAD
-           </P>
-           <a href="/user-user-form">
-                <button type="submit"class="">return</button>
-            </a>
-          
-        </div>
-    </div>
-=======
                         <div class="container left ml-5 mr-5">
                             Identify is an application that can perform the contact tracing of individuals and all the persons whom he got in contact within seconds. identify web app is developed and owned by group 5
                         </div>
@@ -118,9 +109,11 @@
                     </P>
             
                 </div>
+                    <div class="container mt-3 mb-3">
+                        <a class="btn btn-dark btn lg form-rounded custom-button1" href="/user-user-form"><h5>Back</h5></a>
+                    </div>
 
 </body>
 </html>    
->>>>>>> 229673827775a889ae67bba26622279d79cc045f
 
 @endsection
