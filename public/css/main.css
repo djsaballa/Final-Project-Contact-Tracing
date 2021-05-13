@@ -1,4 +1,4 @@
-.font {
+  .font {
     font-family: 'Copperplate', fantasy !important;
     font-style: italic;
     letter-spacing: 2px;
@@ -6,6 +6,33 @@
     
   }
 
+<<<<<<< HEAD
   
 
+=======
+  .containers {
+    height: 30%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+  .heading {
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%;
+    position: relative;
+  }
+>>>>>>> 1c4952ad4cb81cdcaadb06aa4a30f93b8ce5b1f6
+
+  .left {
+    text-align: left;
+  }
