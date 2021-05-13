@@ -8,19 +8,22 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{{ url('/css/main.css') }}" />
 </head>
 <body>
 
         <div class="containers">
-            <img class="heading" src="/images/heading.png" alt="heading">
-            <h1 class="font centered" style="top: 30%">WE DETECT</h1>
-            <p class="font centered">contact tracing</p>
+            <img class="heading shadow-lg" src="/images/heading.png" alt="heading">
+            <h1 class="font centered display-1" style="top: 30%">WE DETECT</h1>
+            <p class="font centered pt-3">contact tracing</p>
         </div>
 
         <br>
 
-        <div class="container">
+        <h1 class="left container pt-3 pb-3 poppins"><strong>Guest's Information</strong></h1>
+
+        <div class="container poppins">
             <form action="/user-user-create" method="POST">
 
                 @csrf 
@@ -72,6 +75,7 @@
                 <button class="btn btn-primary" type="submit" value="submit" class="">Submit</button>
 
             </form>
+
         </div>
         <div class="">
             <input type="checkbox" id="check" name="check" value="agree">
@@ -79,7 +83,12 @@
         </div>
 
             <a>By signing up, you agree to</a><br>
-            <a href="/user-terms-condition">Terms of Service</a> and <a href="/user-privacy-policy">Privacy Policy.</a>
+            <a class="text-danger" href="/user-terms-condition">Terms of Service</a> and 
+            <a class="text-danger" href="/user-privacy-policy">Privacy Policy.</a>
+
+            <div class="container mt-3 mb-3">
+                <a class="btn btn-dark btn lg form-rounded custom-button1" href="/"><h5>Back</h5></a>
+            </div>
         </div>
     </div>
 </body>

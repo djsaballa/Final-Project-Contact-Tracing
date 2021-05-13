@@ -33,12 +33,12 @@ Route::get('/user-terms-condition', 'App\Http\Controllers\UserController@termsCo
 
 Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
-Route::get('/admin-navigation', 'App\Http\Controllers\AdminController@navigation');
-
 Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
-
 Route::post('/admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
 
-Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');
+Route::get('/admin-navigation', 'App\Http\Controllers\AdminController@navigation');
 
-Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiverQr');
+Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiverQrFrom');
+Route::post('/admin-receiver-qr-code', 'App\Http\Controllers\AdminController@receiverQrFormCode');
+
+Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');
