@@ -153,17 +153,10 @@
 
             If you have any questions about the Privacy Statement or any other questions regarding our privacy practices, please contact us at: TRAZE@cosmotech.com.ph
             </p>
-<<<<<<< HEAD
             <a href="/user-user-form">
                 <button type="submit"class="">return</button>
             </a>
         </div>
     </div>
-=======
-            
-
-</body>
-</html>
->>>>>>> 229673827775a889ae67bba26622279d79cc045f
 
 @endsection

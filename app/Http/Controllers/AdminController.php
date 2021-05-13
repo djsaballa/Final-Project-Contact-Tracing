@@ -11,21 +11,23 @@ use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
+    // for homepage
     public function welcome(Request $request)
     {
         return view('/admin/welcome');
     }
 
+    // for navigation
     public function navigation(Request $request)
     {
         return view('/admin/navigation');
     }
 
+    // for login
     public function login(Request $request)
     {
         return view('/admin/login');
     }
-
     public function loginAuth(Request $request)
     {
         //return $request->input();
@@ -53,25 +55,23 @@ class AdminController extends Controller
     // for reciever
     public function receiverQrForm(Request $request)
     {
-        $user_qr= new UserQr();
+        $user_qr = new UserQr();
         return view('/admin/receiver-qr', compact('user_qr'));
     }
-
     public function receiverQrFormCode(Request $request)
     {
-        $user_qr= new UserQr();
-    
+        $user_qr = new UserQr();
+
         $user_qr->qr = $request-> qr;
-       
+
         if ($user_qr->save()) {
-
             return redirect('/admin-receiver-qr');
-
         }
         
         return redirect('/admin-receiver-qr');
     }
     
+
     // for table
     public function tableList (Request $request)
     {

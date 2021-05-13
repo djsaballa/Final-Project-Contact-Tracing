@@ -26,11 +26,11 @@
             });
             </script>
             
-        <form action='/admin-receiver-qr-code' method='POST' style="text-align: center;">
+        <form action='/admin-receiver-qr-create' method='POST' style="text-align: center;">
         @csrf
 
         QR Code:
-        <input type="text" name="qr" value="{{ $qr ?? '' }}"/> 
+        <input type="text" name="qr" value="{{ $user_qr->qr }}"/> 
         <br>
         <br>
 

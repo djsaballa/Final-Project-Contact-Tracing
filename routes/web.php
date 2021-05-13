@@ -13,32 +13,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// User
+
+// user hompage
 Route::get('/', function () {
     return view('welcome');
 });
-// User
-
+//user form
 Route::get('/user-user-form', 'App\Http\Controllers\UserController@userForm');
-
 Route::post('/user-user-create', 'App\Http\Controllers\UserController@userCreate');
 
+//user qr code
 Route::get('/user-qr-code', 'App\Http\Controllers\UserController@qrCode');
 
+//terms and privacy
 Route::get('/user-privacy-policy', 'App\Http\Controllers\UserController@privacyPolicy');
-
 Route::get('/user-terms-condition', 'App\Http\Controllers\UserController@termsCondition');
 
 
 // Admin
 
+//admin homepage
 Route::get('/admin-welcome', 'App\Http\Controllers\AdminController@welcome');
 
+//admin login
 Route::get('/admin-login', 'App\Http\Controllers\AdminController@login');
 Route::post('/admin-login-auth', 'App\Http\Controllers\AdminController@loginAuth');
 
+//admin navigation
 Route::get('/admin-navigation', 'App\Http\Controllers\AdminController@navigation');
 
-Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiverQrFrom');
-Route::post('/admin-receiver-qr-code', 'App\Http\Controllers\AdminController@receiverQrFormCode');
+// admin qr reciever
+Route::get('/admin-receiver-qr', 'App\Http\Controllers\AdminController@receiverQrForm');
+Route::post('/admin-receiver-qr-create', 'App\Http\Controllers\AdminController@receiverQrFormCode');
 
+//table
 Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');

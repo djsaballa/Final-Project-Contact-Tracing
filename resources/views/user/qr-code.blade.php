@@ -37,17 +37,11 @@
                 <button class="btn btn-dark btn-lg form-rounded custom-button mb-4  " type="submit"class="">Exit</button>
             </a>
             <br>
-<<<<<<< HEAD
-            <a href="/user-user-form"class="">Return</a>
-        </div>
-    </div>
-=======
             <a href="/user-user-form"class="text-dark poppins"><strong>Return</strong></a>
 
 
 </body>
 </html>
 
->>>>>>> 229673827775a889ae67bba26622279d79cc045f
 
 @endsection
