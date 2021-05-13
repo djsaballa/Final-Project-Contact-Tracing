@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use App\Models\UserInfo;
 use App\Models\UserQr;
 
@@ -36,6 +37,7 @@ class UserController extends Controller
             $user_info->phone_number = $request->phone_number;
             $user_info->body_temp = $request->body_temp;
             $user_info->age = $request->age;
+            $user_info->qr_code = Str::random(30);;
     
             if ($user_info->save()) {
                 $request->session()->put('LoggedUser', $user_info->id);

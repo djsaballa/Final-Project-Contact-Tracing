@@ -15,6 +15,7 @@ class UserInfoTable extends Migration
     {
         Schema::create('user_info', function (Blueprint $table) {
             $table->id();
+            $table->string('qr_code')->unique();
             $table->string('name', 50);
             $table->string('email')->unique();
             $table->string('address');

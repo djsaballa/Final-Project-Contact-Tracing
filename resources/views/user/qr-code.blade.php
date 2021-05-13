@@ -20,7 +20,7 @@
 
             <br>
             <div class="visible-print text-center">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ $LoggedUserInfo['name'] }} &amp;size=200x200" alt="" title="CTS" id="user_qr"/>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ $LoggedUserInfo['qr_code'] }} &amp;size=200x200" alt="" title="CTS" id="user_qr"/>
             </div>
 
             <h1 class="sora mt-5"><strong>Thank You!</strong></h1>
