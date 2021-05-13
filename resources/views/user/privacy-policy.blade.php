@@ -2,16 +2,24 @@
 @extends('layouts.layout')
 
 @section('content')
+<!DOCTYPE html>
+<html>
+<head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" href="{{ url('/css/main.css') }}" />
+</head>
+<body>
 
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-
-            <h1>WE DETECT</h1>
-            <h4>contact tracing</h4>
+            <div class="font mt-5">
+                <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
+                <h4 class="font" style="font-size: 14px;">contact tracing</h4>
+            </div>
             <br>
-            <h3>Privacy & Policy</h3><br>
+            <h3 class="text-primary"> <strong>Privacy & Policy</strong></h3><br>
 
-            <p>
+            <p class="poppins container">
             Identify is a webapp that automates manual contact tracing by using QR code scanning such that the tracing process done in several days can now be achieved in just few minutes.
 
             An in-app notification will be sent to Identify contact tracing registered individuals who may have come in contact with an identified Covid-19 positive patient so that they can observe precautions and start self-isolation if symptoms occur to protect their families and loved ones.
@@ -145,10 +153,17 @@
 
             If you have any questions about the Privacy Statement or any other questions regarding our privacy practices, please contact us at: TRAZE@cosmotech.com.ph
             </p>
+<<<<<<< HEAD
             <a href="/user-user-form">
                 <button type="submit"class="">return</button>
             </a>
         </div>
     </div>
+=======
+            
+
+</body>
+</html>
+>>>>>>> 229673827775a889ae67bba26622279d79cc045f
 
 @endsection

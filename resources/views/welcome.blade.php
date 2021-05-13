@@ -13,15 +13,9 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
     
-<<<<<<< HEAD
-    <div class="text-white" style="margin-top: 160px;">
-        <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
-        <h4 class="font"  style="font-size: 14px;">contact tracing</h4>
-=======
     <div class="text-white containers centered">
-        <h1 class="font">WE DETECT</h1>
-        <h4 class="font">contact tracing</h4>
->>>>>>> 1c4952ad4cb81cdcaadb06aa4a30f93b8ce5b1f6
+        <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
+        <h4 class="font" style="font-size: 14px;">contact tracing</h4>
     </div>
     <br>    
         <div class="centered">
