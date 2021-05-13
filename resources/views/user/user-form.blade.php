@@ -75,6 +75,10 @@
             <a>By signing up, you agree to</a><br>
             <a class="text-danger" href="/user-terms-condition">Terms of Service</a> and 
             <a class="text-danger" href="/user-privacy-policy">Privacy Policy.</a>
+
+            <div class="container mt-3 mb-3">
+                <a class="btn btn-dark btn lg form-rounded custom-button1" href="/"><h5>Back</h5></a>
+            </div>
         </div>
     </div>
 </body>
