@@ -8,6 +8,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
       <link rel="stylesheet" type="text/css" href="{{ url('/css/main.css') }}" />
 </head>
 <body>
@@ -18,8 +19,9 @@
             </div>
             <br>
             <h3 class="text-primary"> <strong>Privacy & Policy</strong></h3><br>
-
-            <p class="poppins container">
+      
+            <div class="container poppins left">
+        <p>
             Identify is a webapp that automates manual contact tracing by using QR code scanning such that the tracing process done in several days can now be achieved in just few minutes.
 
             An in-app notification will be sent to Identify contact tracing registered individuals who may have come in contact with an identified Covid-19 positive patient so that they can observe precautions and start self-isolation if symptoms occur to protect their families and loved ones.
@@ -153,9 +155,19 @@
 
             If you have any questions about the Privacy Statement or any other questions regarding our privacy practices, please contact us at: TRAZE@cosmotech.com.ph
             </p>
+<<<<<<< HEAD
             <a href="/user-user-form">
                 <button type="submit"class="">return</button>
             </a>
+=======
+
+            </div>
+           
+
+                <div class="container mt-3 mb-3">
+                        <a class="btn btn-dark btn lg form-rounded custom-button1" href="/user-user-form"><h5>Back</h5></a>
+                </div>
+>>>>>>> b02158679526245d310823ff993a4e01fb1949e5
         </div>
     </div>
 

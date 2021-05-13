@@ -28,44 +28,54 @@
 
                 @csrf 
         
-            <input type="hidden" value="{{ $user_info->id }}" name="id" >
-                <div class="container">
-                    <div class="left">              
-                        <label for="name"><strong>Name:</strong></label>
-                        <input class="form-control form-rounded" type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz"><br>
-                    </div> 
+                <input type="hidden" value="{{ $user_info->id }}" name="id" >
 
-                    <div class="left">
-                        <label for="email" class="" ><strong>Email:</strong></label>
-                        <input class="form-control form-rounded" type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com"><br>
-                    </div>
+            <div class="left">              
+                <label for="name">Name:</label>
+                <input class="form-control form-rounded" type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz">
+                <span class="error" style="color: red;">@error('name'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    <div class="left">
-                        <label for="address" class="" ><strong>Address:</strong></label>
-                        <input class="form-control form-rounded" type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga"><br>
-                    </div>
+            <div class="left">
+                <label for="email" class="" >Email:</label>
+                <input class="form-control form-rounded" type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com">
+                <span class="error" style="color: red;">@error('email'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    <div class="left">
-                        <label for="phone_number" class="" ><strong>Phone No.:</strong></label>
-                        <input class="form-control form-rounded" type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx"><br>
-                    </div>
+            <div class="left">
+                <label for="address" class="" >Address:</label>
+                <input class="form-control form-rounded" type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga">
+                <span class="error" style="color: red;">@error('address'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    <div class="left">
-                        <label for="body_temp" class="" ><strong>Body Temperature:</strong></label>
-                        <input class="form-control form-rounded" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5"><br>
-                    </div>
+            <div class="left">
+                <label for="phone_number" class="" >Phone No.:</label>
+                <input class="form-control form-rounded" type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx">
+                <span class="error" style="color: red;">@error('phone_number'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    <div class="left">
-                        <label for="age" class="" ><strong>Age:</strong></label>
-                        <input class="form-control form-rounded" type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19"><br>
-                    </div>
+            <div class="left">
+                <label for="body_temp" class="" >Body Temperature:</label>
+                <input class="form-control form-rounded" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5">
+                <span class="error" style="color: red;">@error('body_temp'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    <div class="container pb-3">
-                        <button class="btn btn-dark btn-lg form-rounded custom-button" type="submit" value="submit" class="">Submit</button>
-                    </div>
+            <div class="left">
+                <label for="age" class="" >Age:</label>
+                <input class="form-control form-rounded" type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19">
+                <span class="error" style="color: red;">@error('age'){{ $message }} @enderror</span>
+            </div>
+            <br>
 
-                    </form>
-                </div>
+                <button class="btn-lg btn-dark custom-button form-rounded mt-4 mb-4" type="submit" value="submit" class="">Submit</button>
+
+            </form>
+
         </div>
         <div class="">
             <input type="checkbox" id="check" name="check" value="agree">
@@ -77,7 +87,7 @@
             <a class="text-danger" href="/user-privacy-policy">Privacy Policy.</a>
 
             <div class="container mt-3 mb-3">
-                <a class="btn btn-dark btn lg form-rounded custom-button1" href="/"><h5>Back</h5></a>
+                <a class="btn btn-dark form-rounded custom-button1" href="/"><h5>Back</h5></a>
             </div>
         </div>
     </div>
