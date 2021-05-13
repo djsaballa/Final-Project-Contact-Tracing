@@ -36,7 +36,7 @@
         @yield('content') 
 
     </body>
-    <footer>
-            Copyright 2021 | GROUP 7
+    <footer style="color: black;">
+            <h5 style=" font-size: 13px;">Copyright 2021 | GROUP 7</h5>
     </footer>
 </html>

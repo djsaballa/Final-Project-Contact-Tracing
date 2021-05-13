@@ -13,9 +13,9 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
     
-    <div class="text-white">
-        <h1 class="font">WE DETECT</h1>
-        <h4 class="font">contact tracing</h4>
+    <div class="text-white" style="margin-top: 160px;">
+        <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
+        <h4 class="font"  style="font-size: 14px;">contact tracing</h4>
     </div>
     <br>
 	        <a href="/user-user-form">

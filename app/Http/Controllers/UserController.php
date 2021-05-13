@@ -38,10 +38,15 @@ class UserController extends Controller
 
     
     // for qr-code
+
     public function qrCode(Request $request)
     {
-        return view('/user/qr-code');
+
+        $user_info = UserInfo::all();
+        return view('/user/qr-code', compact('user_info'));
     }
+
+
 
 
     // privacy and terms
