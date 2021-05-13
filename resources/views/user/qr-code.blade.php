@@ -15,7 +15,7 @@
 <body>
 
             <div class="font mt-5 mb-5">
-                <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
+                <h1 class="font" style="font-size: 60px;">WE DETECT</h1>
             </div>
 
             <br>
@@ -34,19 +34,10 @@
                 <button class="btn btn-dark btn-lg form-rounded custom-button mb-4  " type="submit"class="">Exit</button>
             </a>
             <br>
-<<<<<<< HEAD
-            <a href="/user-user-form"class="text-dark poppins"><strong>Return</strong></a>
-
-
-</body>
-</html>
-
-=======
             <div class="container mb-5">
                 <a href="/user-user-form" class="poppins text-dark">Return</a>
             </div>
         </div>
     </div>
->>>>>>> b02158679526245d310823ff993a4e01fb1949e5
 
 @endsection
