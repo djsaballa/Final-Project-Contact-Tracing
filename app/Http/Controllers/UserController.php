@@ -43,6 +43,7 @@ class UserController extends Controller
     {
 
         $user_info = UserInfo::all();
+
         return view('/user/qr-code', compact('user_info'));
     }
 

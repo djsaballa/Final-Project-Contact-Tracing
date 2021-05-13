@@ -10,15 +10,13 @@
             <h4>contact tracing</h4>   
             <br>
             <div class="visible-print text-center">
-           
+            @foreach ($user_info as $user_info) 
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data={{$user_info->name}} &amp;size=100x100" alt="" title="CTS" id="user_qr"/>
+                    <p>{{$user_info->id}}</p>
+                @endforeach
+                
             </div>
-            <br>
-            @foreach ($user_info as $user_info)
-              
-            <img src="https://api.qrserver.com/v1/create-qr-code/?data='{{$user_info->name}}'&amp;size=100x100" alt="" title="qrCode" id="user_qr"/>
-            
-           
-             @endforeach
+
             <h2>Thank You!</h2>
             <br>
             <p>You have successfully <br>
