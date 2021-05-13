@@ -12,38 +12,50 @@
 </head>
 <body>
 
-        <div class="">
-            <img src="{{ URL::to('../../resources/images/heading.png') }}">
-            <h1 class="font">WE DETECT</h1>
-            <h4 class="font">contact tracing</h4>
+        <div class="containers">
+            <img class="heading" src="/images/heading.png" alt="heading">
+            <h1 class="font centered" style="top: 30%">WE DETECT</h1>
+            <p class="font centered">contact tracing</p>
         </div>
 
         <br>
 
-        <div class="">
+        <div class="container">
             <form action="/user-user-create" method="POST">
 
                 @csrf 
         
                 <input type="hidden" value="{{ $user_info->id }}" name="id" >
-                                
-                <label for="name" class="" >Name:</label>
-                <input type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz"><br>
 
+            <div class="left">              
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" value="{{ $user_info->name }}"  name="name" class="" placeholder="ex. juan dela cruz"><br>
+            </div> 
+
+            <div class="left">
                 <label for="email" class="" >Email:</label>
-                <input type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com"><br>
+                <input class="form-control" type="email" value="{{ $user_info->email }}"  name="email" class="" placeholder="ex. juandelacruz@gmail.com"><br>
+            </div>
 
+            <div class="left">
                 <label for="address" class="" >Address:</label>
-                <input type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga"><br>
+                <input class="form-control" type="text" value="{{ $user_info->address }}"  name="address" class="" placeholder="ex. sampaloc apalit pampanga"><br>
+            </div>
 
+            <div class="left">
                 <label for="phone_number" class="" >Phone No.:</label>
-                <input type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx"><br>
+                <input class="form-control" type="number" value="{{ $user_info->phone_number }}"  name="phone_number" class="" placeholder="ex. 09xxxxxxxxx"><br>
+            </div>
 
+            <div class="left">
                 <label for="body_temp" class="" >Body Temperature:</label>
-                <input type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5"><br>
+                <input class="form-control" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5"><br>
+            </div>
 
+            <div class="left">
                 <label for="age" class="" >Age:</label>
-                <input type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19"><br>
+                <input class="form-control" type="number" value="{{ $user_info->age }}"  name="age" class="" placeholder="ex. 19"><br>
+            </div>
 
                 <button class="btn btn-primary" type="submit" value="submit" class="">Submit</button>
 
@@ -55,7 +67,7 @@
         </div>
 
             <a>By signing up, you agree to</a><br>
-            <a href="/user-terms-condition">Terms of Service &nbsp;&nbsp;</a>and&nbsp;&nbsp;<a href="/user-privacy-policy">Privacy Policy.</a>
+            <a href="/user-terms-condition">Terms of Service</a> and <a href="/user-privacy-policy">Privacy Policy.</a>
         </div>
     </div>
 </body>
