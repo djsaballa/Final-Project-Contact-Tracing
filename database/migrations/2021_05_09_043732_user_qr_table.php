@@ -14,8 +14,7 @@ class UserQrTable extends Migration
     public function up()
     {
         Schema::create('user_qr', function (Blueprint $table) {
-            $table->id();         
-            $table->foreignId('user_id')->references('id')->on('user_info');            
+            $table->id();                     
             $table->string('qr');
             $table->timestamps();
         });
