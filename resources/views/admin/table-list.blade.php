@@ -28,9 +28,9 @@
                         <h5 class="font">Admin</h5>
                     </div>
                 </div>
-
-        <div class="container table border border-primary rounded shadow-lg">     
-            <table id="table_list" class="table poppins">
+<div class="d-flex justify-content-center">
+        <div class="table border border-primary form-rounded shadow-lg text-center pt-4 pr-4 pl-4 pb-4" style="max-width: 90%;">     
+            <table id="table_list" class="table table-hover poppins">
                 <thead>
                     <tr>
                         <th>No.</th>
@@ -58,6 +58,7 @@
                 </tbody>
             </table>
         </div>      
+        </div>
 
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
