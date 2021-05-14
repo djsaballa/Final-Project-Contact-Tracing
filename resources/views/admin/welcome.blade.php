@@ -20,10 +20,11 @@
                         <div class="text-white containers centered mb-5">
                                 <h1 class="font" style="font-size: 35px;">WE DETECT</h1>
                                 <h4 class="font" style="font-size: 14px;">contact tracing</h4>
+                                <h5 class="font" style="text-align: center; margin: 15px;">Admin</h5>
                         </div>
                 </div>
 
-                <h5 class="font text-white mb-5" style="text-align: center; margin: 15px;">Admin</h5>
+
                 
                 <div class="centered mt-5">
                         <a href="/admin-login">

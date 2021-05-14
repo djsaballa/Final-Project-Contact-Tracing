@@ -60,7 +60,7 @@ class AdminController extends Controller
     {
         $user_qr = new UserQr();
 
-        $user_qr->qr = $request-> qr;
+        $user_qr->user_info_qr_code = $request-> user_info_qr_code;
 
         if ($user_qr->save()) {
             return redirect('/admin-receiver-qr');
@@ -78,9 +78,9 @@ class AdminController extends Controller
         return view('/admin/table-list', compact('user_qr'));
     }
 
-    public function tableDetails ($id)
+    public function tableDetails ($qr_code)
     {
-        $user_info = UserInfo::find($id);
+        $user_info = UserInfo::find($qr_code);
         
         return view('/admin/table-details', compact('user_info'));
     }

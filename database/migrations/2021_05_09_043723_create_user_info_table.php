@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UserInfoTable extends Migration
+class CreateUserInfoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,7 @@ class UserInfoTable extends Migration
             $table->string('email')->unique();
             $table->string('address');
             $table->bigInteger('phone_number')->unique();
-            $table->bigInteger('body_temp');
+            $table->decimal('body_temp', 5, 2);
             $table->bigInteger('age');
             $table->timestamps();
         });

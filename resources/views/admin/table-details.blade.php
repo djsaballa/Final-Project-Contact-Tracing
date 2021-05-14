@@ -27,9 +27,9 @@
                     <h5 class="font">Admin</h5>
                 </div>
             </div>
-       
-        <div class="container table border border-primary rounded shadow-lg">
-            <table id="table_details" class="table poppins">
+       <div class="d-flex justify-content-center">
+        <div class="table border border-primary form-rounded shadow-lg text-center pt-4 pr-4 pl-4 pb-4" style="max-width: 90%;">
+            <table id="table_details" class="table table-hover poppins">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -58,6 +58,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
 
     </body>
