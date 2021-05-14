@@ -37,7 +37,7 @@
 
     </body>
     
-    <footer>
+    <footer class="text-dark">
             Copyright 2021 | GROUP 7
     </footer>
   
