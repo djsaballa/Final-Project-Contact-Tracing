@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UserQrTable extends Migration
+class CreateUserQrTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class UserQrTable extends Migration
     {
         Schema::create('user_qr', function (Blueprint $table) {
             $table->id();         
-            $table->foreignId('user_id')->references('id')->on('user_info');            
+            $table->foreignId('user_info_qr_code')->constrained('user_info');
             $table->string('qr');
             $table->timestamps();
         });

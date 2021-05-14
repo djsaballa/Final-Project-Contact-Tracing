@@ -60,7 +60,7 @@
 
             <div class="left">
                 <label for="body_temp" class="" >Body Temperature:</label>
-                <input class="form-control form-rounded" type="number" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5">
+                <input class="form-control form-rounded" type="decimal" value="{{ $user_info->body_temp }}"  name="body_temp" class="" placeholder="ex. 36.5">
                 <span class="error" style="color: red;">@error('body_temp'){{ $message }} @enderror</span>
             </div>
             <br>
