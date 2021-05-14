@@ -14,12 +14,13 @@
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
-        <div class="container">
+        <div class="container mt-5">
                 <h1 class="font text-white">We Detect</h1>
                 <h5 class="font text-white">Contact Tracing</h5>
+                <p class="font text-white">Admin</p>
         </div>
 
-        <h5 class="font text-white mb-5">Admin</h5>
+        
 
         <form method="POST" action="/admin-login-auth"  style="text-align: center;">
                 @if(Session::get('fail'))
