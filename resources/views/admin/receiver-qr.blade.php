@@ -43,8 +43,8 @@
         @csrf
 
         <label class="text-white left mt-5 ">QR Code:</label>
-        <input class="form-control form-rounded" type="text"  name="user_info_qr_code">
-
+        <input class="form-control form-rounded" type="password"   name="qrscan" value="{{ $user_qr->qrscan }}" id="qrscan">
+        <button class="btn-lg btn-dark custom-button form-rounded mt-2 mb-2" type="submit" value="submit" width="50%">Submit</button>
         </form>
       </div>
       </div>

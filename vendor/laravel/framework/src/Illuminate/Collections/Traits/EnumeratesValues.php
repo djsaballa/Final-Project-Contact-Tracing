@@ -730,7 +730,7 @@ trait EnumeratesValues
      * Reduce the collection to a single value.
      *
      * @param  callable  $callback
-     * @param  mixed  $initial
+     * @param  mixed $initial
      * @return mixed
      */
     public function reduce(callable $callback, $initial = null)
@@ -748,12 +748,18 @@ trait EnumeratesValues
      * Reduce an associative collection to a single value.
      *
      * @param  callable  $callback
-     * @param  mixed  $initial
+     * @param  mixed $initial
      * @return mixed
      */
     public function reduceWithKeys(callable $callback, $initial = null)
     {
-        return $this->reduce($callback, $initial);
+        $result = $initial;
+
+        foreach ($this as $key => $value) {
+            $result = $callback($result, $value, $key);
+        }
+
+        return $result;
     }
 
     /**

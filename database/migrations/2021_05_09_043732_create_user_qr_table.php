@@ -15,7 +15,7 @@ class CreateUserQrTable extends Migration
     {
         Schema::create('user_qr', function (Blueprint $table) {
             $table->id();                     
-            $table->string('user_info_qr_code', 30);
+            $table->string('qrscan');
             $table->timestamps();
         });
     }

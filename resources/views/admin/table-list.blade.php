@@ -45,7 +45,7 @@
                     @foreach ($user_qr as $user_code)
                     <tr class="table-primary">
                         <td>{{ $user_code->id }}</td>
-                        <td>{{ $user_code->user_info_qr_code }}</td>
+                        <td>{{ $user_code->qrscan }}</td>
                         <td>{{ $user_code->created_at }}</td>
                         <td>{{ $user_code->updated_at }}</td>
                         <td>

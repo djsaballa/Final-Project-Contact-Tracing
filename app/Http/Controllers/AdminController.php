@@ -53,13 +53,14 @@ class AdminController extends Controller
     // for reciever
     public function receiverQrForm(Request $request)
     {
-        return view('/admin/receiver-qr');
+        $user_qr = new UserQr();
+        return view('/admin/receiver-qr', compact('user_qr'));
     }
     public function receiverQrFormCode(Request $request)
     {
-        $user_qr  = new UserQr();
+        $user_qr = new UserQr();
 
-        $user_qr->user_info_qr_code = $request-> user_info_qr_code;
+        $user_qr->qrscan = $request->qrscan;
 
         if ($user_qr->save()) {
             return redirect('/admin-receiver-qr', compact('user_qr'));
