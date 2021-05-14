@@ -15,12 +15,12 @@ class CreateUserInfoTable extends Migration
     {
         Schema::create('user_info', function (Blueprint $table) {
             $table->id();
-            $table->string('qr_code')->unique();
+            $table->string('qr_code', 30)->unique();
             $table->string('name', 50);
             $table->string('email')->unique();
             $table->string('address');
             $table->bigInteger('phone_number')->unique();
-            $table->decimal('body_temp', 5, 2);
+            $table->decimal('body_temp', 5, 1);
             $table->bigInteger('age');
             $table->timestamps();
         });

@@ -43,7 +43,7 @@
         @csrf
 
         <label class="text-white left mt-5 ">QR Code:</label>
-        <input class="form-control form-rounded" type="text"  name="qr" value="{{ $user_qr->qr }}">
+        <input class="form-control form-rounded" type="text"  name="user_info_qr_code">
 
         </form>
       </div>
