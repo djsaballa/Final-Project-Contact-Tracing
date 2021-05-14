@@ -25,7 +25,7 @@
             }
             footer {
                 padding: 20px;
-                color: white;
+                color: black;
                 text-align: center;
             }
         </style>
@@ -37,8 +37,8 @@
 
     </body>
     
-    <footer>
-            Copyright 2021 | GROUP 7
+    <footer class="text-dark">
+            <strong>Copyright 2021 | GROUP 7</strong>
     </footer>
   
 </html>
