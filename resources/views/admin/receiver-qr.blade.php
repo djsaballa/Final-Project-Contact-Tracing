@@ -40,11 +40,12 @@
         </div>
             
         <form action='/admin-receiver-qr-create' method='POST' style="text-align: center;">
-        @csrf
+            @csrf
 
-        <label class="text-white left mt-5 ">QR Code:</label>
-        <input class="form-control form-rounded" type="text"  name="user_info_qr_code">
-
+            <label class="text-white left mt-5 ">QR Code:</label>
+            <input class="form-control form-rounded" type="text"  name="user_info_qr_code">
+            <br>
+            <button type="submit">Enter</button>
         </form>
       </div>
       </div>
