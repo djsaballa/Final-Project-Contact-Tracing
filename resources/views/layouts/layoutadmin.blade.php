@@ -38,7 +38,7 @@
     </body>
     
     <footer class="text-dark">
-            Copyright 2021 | GROUP 7
+            <strong>Copyright 2021 | GROUP 7</strong>
     </footer>
   
 </html>
