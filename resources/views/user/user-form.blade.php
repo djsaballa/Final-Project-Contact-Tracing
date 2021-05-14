@@ -15,8 +15,8 @@
 
         <div class="containers">
             <img class="heading shadow-lg" src="/images/heading.png" alt="heading">
-            <h1 class="font centered display-1" style="top: 30%">WE DETECT</h1>
-            <p class="font centered pt-3">contact tracing</p>
+            <h1 class="font centered display-2" style="top: 40%">WE DETECT</h1>
+            <p class="font centered pt-1"  style="top: 60%">contact tracing</p>
         </div>
 
         <br>
@@ -72,10 +72,9 @@
             </div>
             <br>
 
-                <button class="btn-lg btn-dark custom-button form-rounded mt-4 mb-4" type="submit" value="submit" class="">Submit</button>
+                <button class="btn-lg btn-dark custom-button form-rounded mt-2 mb-2" type="submit" value="submit" width="50%">Submit</button>
 
             </form>
-
         </div>
         <div class="">
             <input type="checkbox" id="check" name="check" value="agree">
@@ -86,9 +85,7 @@
             <a class="text-danger" href="/user-terms-condition">Terms of Service</a> and 
             <a class="text-danger" href="/user-privacy-policy">Privacy Policy.</a>
 
-            <div class="container mt-3 mb-3">
-                <a class="btn btn-dark form-rounded custom-button1" href="/"><h5>Back</h5></a>
-            </div>
+           
         </div>
     </div>
 </body>
