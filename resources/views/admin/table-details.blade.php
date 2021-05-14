@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Contact Tracing</title>
+        <title>WE DETECT | Contact Tracing</title>
 
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -32,33 +32,36 @@
             <table id="table_details" class="table table-hover poppins">
                 <thead>
                     <tr>
+                        <th>QR-Code</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Address</th>
                         <th>Phone No.</th>
                         <th>Body Temperature</th>
                         <th>Age</th>
-                        <th>&nbsp;</th>
                     </tr>
                 </thead>
 
                 <tbody>
+                @foreach ($user_info as $user_info)
                     <tr class="table-primary">
+                        <td>{{ $user_info->qr_code }}</td>
                         <td>{{ $user_info->name }}</td>
                         <td>{{ $user_info->email }}</td>
                         <td>{{ $user_info->address }}</td>
                         <td>{{ $user_info->phone_number }}</td>
                         <td>{{ $user_info->body_temp }}</td>
                         <td>{{ $user_info->age }}</td>
-                        <td>
-                            <a href="/admin-table-list">
-                            <button class="btn btn-primary" type="submit"> GO BACK </button>
-                            </a>
-                        </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
+            <br>
+            <a href="/admin-table-list">
+                <button class="btn btn-primary" type="submit"> GO BACK </button>
+            </a>
         </div>
+
         </div>
 
     </body>

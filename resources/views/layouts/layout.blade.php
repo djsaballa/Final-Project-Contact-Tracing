@@ -29,7 +29,7 @@
                 text-align: center;
             }
         </style>
-        <title>Contact Tracing</title>
+        <title>WE DETECT | Contact Tracing</title>
     </head>
     <body class="antialiased">
         

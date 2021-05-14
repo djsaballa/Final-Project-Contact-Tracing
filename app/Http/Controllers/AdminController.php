@@ -77,9 +77,9 @@ class AdminController extends Controller
         return view('/admin/table-list', compact('user_qr'));
     }
 
-    public function tableDetails ($qr_code)
+    public function tableDetails (Request $request)
     {
-        $user_info = UserInfo::find($qr_code);
+        $user_info = UserInfo::all();
         
         return view('/admin/table-details', compact('user_info'));
     }

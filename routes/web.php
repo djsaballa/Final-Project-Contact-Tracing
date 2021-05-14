@@ -49,4 +49,4 @@ Route::post('/admin-receiver-qr-create', 'App\Http\Controllers\AdminController@r
 
 //table
 Route::get('/admin-table-list', 'App\Http\Controllers\AdminController@tableList');
-Route::get('/admin-table-details/{qr_code}', 'App\Http\Controllers\AdminController@tableDetails');
+Route::get('/admin-table-details', 'App\Http\Controllers\AdminController@tableDetails');

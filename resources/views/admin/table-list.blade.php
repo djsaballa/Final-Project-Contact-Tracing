@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Contact Tracing</title>
+        <title>WE DETECT | Contact Tracing</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
@@ -34,7 +34,7 @@
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>QR Code</th>
+                        <th>QR SCAN</th>
                         <th>Time In</th>
                         <th>Time Out</th>
                         <th>&nbsp;</th>
@@ -48,15 +48,14 @@
                         <td>{{ $user_code->qrscan }}</td>
                         <td>{{ $user_code->created_at }}</td>
                         <td>{{ $user_code->updated_at }}</td>
-                        <td>
-                            <a href="/admin-table-details/{{ $user_code->user_info_qr_code }}" class="btn btn-primary">
-                            VIEW
-                            </a>
-                        </td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
+            <br>
+            <a href="/admin-table-details" class="btn btn-primary">
+                <button class="btn btn-primary" type="submit"> PERSONAL INFO </button>
+            </a>
         </div>      
         </div>
 
